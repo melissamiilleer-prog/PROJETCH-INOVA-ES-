@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetch Inovações | Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="logo_Projetch.png" alt="Projetch Logo" onerror="this.style.display='none'">
+    <div class="nav-logo-text">PROJETCH<br><span>INOVAÇÕES</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="contato.html" class="nav-cta">Solicitar Projeto</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="projetos.html">Projetos</a>
+  <a href="contato.html">Solicitar Projeto</a>
+</div>
+
+<!-- ══ CONTATO WRAPPER ══ -->
+<div class="contact-wrapper" style="padding-top: calc(70px + 4rem);">
+
+  <!-- ── INFO ── -->
+  <div class="contact-info">
+    <div class="section-label reveal">Entre em contato</div>
+    <h1 class="section-title reveal">Solicite seu<br>Projeto</h1>
+    <p class="section-sub reveal">
+      Preencha o formulário com os detalhes do seu projeto e nossa equipe retornará em até 24 horas com uma proposta personalizada.
+    </p>
+
+    <div class="ci-email reveal">
+      <div class="ci-icon">✉️</div>
+      <div>
+        <div class="ci-label">E-mail</div>
+        <a href="mailto:projetechinovacoes@gmail.com">projetechinovacoes@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="features-list">
+      <div class="feature-item reveal">
+        <div class="feature-check">✓</div>
+        <p>Resposta em até 24 horas</p>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-check">✓</div>
+        <p>Proposta personalizada e sem compromisso</p>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-check">✓</div>
+        <p>Orçamento transparente e detalhado</p>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-check">✓</div>
+        <p>Suporte dedicado do início ao fim do projeto</p>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-check">✓</div>
+        <p>Tecnologias modernas: IA, GitHub, banco de dados</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FORMULÁRIO ── -->
+  <div class="contact-form-wrap reveal">
+
+    <!-- Formulário -->
+    <div id="form-area">
+      <div class="form-title">Formulário de Solicitação</div>
+      <div class="form-sub">Descreva seu projeto e entraremos em contato</div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nome *</label>
+          <input type="text" id="f-nome" placeholder="Seu nome completo">
+        </div>
+        <div class="form-group">
+          <label>Empresa</label>
+          <input type="text" id="f-empresa" placeholder="Nome da empresa (opcional)">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>E-mail *</label>
+          <input type="email" id="f-email" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label>WhatsApp / Telefone</label>
+          <input type="tel" id="f-tel" placeholder="(11) 99999-9999">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Tipo de Projeto *</label>
+        <select id="f-tipo">
+          <option value="" disabled selected>Selecione o tipo de projeto</option>
+          <option value="site">Site Institucional / Landing Page</option>
+          <option value="ecommerce">E-commerce / Loja Virtual</option>
+          <option value="app">Aplicativo Web</option>
+          <option value="sistema">Sistema / Software</option>
+          <option value="ia">Integração com IA</option>
+          <option value="suporte">Manutenção / Suporte</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+<div class="form-group">
+        <label>Prazo Desejado</label>
+        <select id="f-prazo">
+          <option value="" disabled selected>Selecione o prazo</option>
+          <option value="urgente">Urgente (até 2 semanas)</option>
+          <option value="1mes">1 mês</option>
+          <option value="2mes">2 meses</option>
+          <option value="3mes">3 meses ou mais</option>
+          <option value="flexivel">Flexível</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Descrição do Projeto *</label>
+        <textarea id="f-desc" rows="5" placeholder="Descreva o que você precisa: funcionalidades desejadas, público-alvo, referências de sites que goste, integrações necessárias..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Referências / Links (opcional)</label>
+        <input type="text" id="f-refs" placeholder="Links de sites que você admira ou quer como referência">
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="f-lgpd">
+        <label for="f-lgpd">Concordo com o uso dos meus dados para fins de contato e elaboração de proposta, conforme a LGPD.</label>
+      </div>
+
+      <button class="btn-submit" id="btn-submit" onclick="submitForm()">
+        <span>⟶ ENVIAR SOLICITAÇÃO</span>
+      </button>
+    </div>
+
+    <!-- Sucesso -->
+    <div class="form-success" id="form-success">
+      <div class="success-icon">✅</div>
+      <h3>Solicitação Enviada!</h3>
+      <p>
+        Recebemos seu projeto e entraremos em contato em até 24h pelo e-mail informado.<br><br>
+        Você também pode nos contatar diretamente em<br>
+        <a href="mailto:projetechinovacoes@gmail.com" style="color:var(--blue-bright)">projetechinovacoes@gmail.com</a>
+      </p>
+      <br>
+      <button class="btn-ghost" onclick="resetForm()" style="margin-top:1rem">Enviar outra solicitação</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="fb-logo">
+        <img src="logo_Projetch.png" alt="Projetch" onerror="this.style.display='none'">
+        <div class="fb-logo-text">PROJETCH<br><span>INOVAÇÕES</span></div>
+      </div>
+      <p>Criamos sites e aplicativos modernos com foco em performance, segurança e inovação digital.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navegação</h5>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Serviços</h5>
+      <ul>
+        <li><a href="servicos.html">Sites</a></li>
+        <li><a href="servicos.html">Aplicativos</a></li>
+        <li><a href="servicos.html">IA</a></li>
+        <li><a href="servicos.html">Segurança</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contato</h5>
+      <ul>
+        <li><a href="mailto:projetechinovacoes@gmail.com">projetechinovacoes@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Projetch Inovações. Todos os direitos reservados.</p>
+    <p>Feito com 💙 pela <a href="index.html">Projetch</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="main.js"></script>
+</body>
+</html>
