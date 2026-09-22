@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetch Inovações | Contato</title>
+  <meta name="description" content="Solicite um orçamento para seu site, aplicativo ou sistema. Resposta em até 24 horas. Fale com a Projetch Inovações.">
+  <link rel="canonical" href="https://melissamiilleer-prog.github.io/PROJETCH-INOVA-ES-/contato.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Projetch Inovações">
+  <meta property="og:title" content="Projetch Inovações | Contato">
+  <meta property="og:description" content="Solicite um orçamento para seu site, aplicativo ou sistema. Resposta em até 24 horas.">
+  <meta property="og:image" content="https://melissamiilleer-prog.github.io/PROJETCH-INOVA-ES-/logo_Projetch.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projetch Inovações | Contato">
+  <meta name="twitter:description" content="Solicite um orçamento para seu site, aplicativo ou sistema. Resposta em até 24 horas.">
+  <meta name="twitter:image" content="https://melissamiilleer-prog.github.io/PROJETCH-INOVA-ES-/logo_Projetch.png">
+
+  <link rel="icon" type="image/png" href="logo_Projetch.png">
+  <link rel="apple-touch-icon" href="logo_Projetch.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -84,6 +104,11 @@
     <!-- Formulário -->
     <div id="form-area">
       <div class="form-title">Formulário de Solicitação</div>
+      <!-- Campo-armadilha contra bots: deve ficar sempre vazio -->
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+        <label for="f-website">Não preencha este campo</label>
+        <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-sub">Descreva seu projeto e entraremos em contato</div>
 
       <div class="form-row">
@@ -146,7 +171,7 @@
 
       <div class="form-check">
         <input type="checkbox" id="f-lgpd">
-        <label for="f-lgpd">Concordo com o uso dos meus dados para fins de contato e elaboração de proposta, conforme a LGPD.</label>
+        <label for="f-lgpd">Concordo com o uso dos meus dados para fins de contato e elaboração de proposta, conforme a <a href="privacidade.html" target="_blank" style="color:var(--blue-bright);">Política de Privacidade</a> e a LGPD.</label>
       </div>
 
       <button class="btn-submit" id="btn-submit" onclick="submitForm()">
@@ -207,7 +232,7 @@
   </div>
   <div class="footer-bottom">
     <p>© 2026 Projetch Inovações. Todos os direitos reservados.</p>
-    <p>Feito com 💙 pela <a href="index.html">Projetch</a></p>
+    <p><a href="privacidade.html">Política de Privacidade</a> · Feito com 💙 pela <a href="index.html">Projetch</a></p>
   </div>
 </footer>
 

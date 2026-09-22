@@ -85,7 +85,8 @@ body {
 /* ══════════════════════════════════
    CURSOR
    ══════════════════════════════════ */
-body { cursor: none; }
+body.custom-cursor-active { cursor: none; }
+@media (prefers-reduced-motion: reduce) { body.custom-cursor-active { cursor: auto; } }
 .cursor {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--blue-primary);

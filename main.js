@@ -18,6 +18,10 @@
     cursor    = document.createElement('div'); cursor.className    = 'cursor';
     cursorRing = document.createElement('div'); cursorRing.className = 'cursor-ring';
     document.body.append(cursor, cursorRing);
+    // Só esconde o cursor padrão do sistema depois que o cursor
+    // customizado foi criado com sucesso — evita ficar sem cursor
+    // visível caso algo falhe antes deste ponto.
+    document.body.classList.add('custom-cursor-active');
   }
 
   let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
@@ -162,6 +166,15 @@
     const refs    = get('f-refs')?.value.trim();
     const lgpd    = get('f-lgpd')?.checked;
     const btn     = get('btn-submit');
+    const honeypot = get('f-website')?.value.trim();
+
+    // Campo-armadilha preenchido = provavelmente um bot. Finge sucesso
+    // e não envia nada, sem alertar o robô de que foi bloqueado.
+    if (honeypot) {
+      get('form-area').style.display    = 'none';
+      get('form-success').style.display = 'block';
+      return;
+    }
 
     if (!nome)                          { showToast('Informe seu nome.', false);             return; }
     if (!email || !email.includes('@')) { showToast('Informe um e-mail válido.', false);      return; }
