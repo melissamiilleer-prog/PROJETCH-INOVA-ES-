@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://melissamiilleer-prog.github.io/PROJETCH-INOVA-ES-/sitemap.xml
